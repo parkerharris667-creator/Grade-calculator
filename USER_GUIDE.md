@@ -89,7 +89,7 @@ Please input the Minimum Points for a 'D': 60
 The Grading Scheme You Input
 ============================
 Total Points Possible in the Course: 100
-Points needed for an 'A': 9
+Points needed for an 'A': 90
 Points needed for a 'B': 80
 Points needed for a 'C': 70
 Points needed for a 'D': 60
@@ -138,6 +138,16 @@ i: 10 points
 u: 10 points
 y: 10 points
 t: 10 points
+
+Understanding Your Results-
+
+Total Points Earned - total points you earned in the class- should be all the added points of each assingment.
+
+Total Points Possible - the same value you put when the prompt asked you for it during "Please input the Total Points Possible:"
+
+Total Percentage - The percentage you got in the class based on the total points possible and the total points you earned.
+
+Final Letter Grade - is a rehashing of all the values you inputed for "Please input the Minimum Points for a 'A':" and also "Points needed for an 'A':"
 
 Troubleshooting — 
 A common mistake is putting a letter in the "Please input the points earned for Assignment 1:" prompt you should only use numbers here.
