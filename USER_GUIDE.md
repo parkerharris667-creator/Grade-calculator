@@ -22,7 +22,12 @@ Grade Calculation
 You will be prompted to input scores for all assignments.
 (Input a negative number to cease input and calculate letter grade.)
 
-Please input the points earned for Assignment 1: Please input the name for Assignment 1: Please input the points earned for Assignment 2: Please input the name for Assignment 2: Please input the points earned for Assignment 3: Debug: Total Points Earned: 183
+Please input the points earned for Assignment 1: 95
+Please input the name for Assignment 1: Homework 1
+Please input the points earned for Assignment 2: 88
+Please input the name for Assignment 2: Homework 2
+Please input the points earned for Assignment 3: -1
+Debug: Total Points Earned: 183
 Debug: A Points: 450
 Debug: B Points: 400
 Debug: C Points: 350
