@@ -1,4 +1,3 @@
-# Grade-calculator
 #include <iostream>
 #include <cmath>
 #include <ctime>
@@ -7,7 +6,7 @@
 #include <algorithm>
 #include "Greeting.h"
 
- * Grade Calculator — Final Project
+ Grade Calculator — Final Project
  * Author: [Parker Harris]
  * Course: COSC 1436, [Spring 2026]
  *
@@ -25,7 +24,6 @@
  * Ch 10 - Header + implementation files: Greeting.h and Greeting.cpp
  * Ch 11 - std::vector with push_back, range-based for, and indexed iteration
  * Ch 12 - <algorithm> std::sort with a lambda; <string> getline for names
-
 int main() {
     // Variable declarations
     int total_course_points = 0;
@@ -105,7 +103,25 @@ int main() {
     } else {
         score_input = false;
     }
-} while (score_input);
+    } while (score_input);
+
+    // Determine the final grade
+    if (total_points_earned >= A_points) {
+    earned_grade = 'A';
+    } else if (total_points_earned >= B_points) {
+    earned_grade = 'B';
+    } else if (total_points_earned >= C_points) {
+    earned_grade = 'C';
+    } else if (total_points_earned >= D_points) {
+    earned_grade = 'D';
+    } else {
+    earned_grade = 'F';
+    }
+    std::cout << "Debug: Total Points Earned: " << total_points_earned << std::endl;
+    std::cout << "Debug: A Points: " << A_points << std::endl;
+    std::cout << "Debug: B Points: " << B_points << std::endl;
+    std::cout << "Debug: C Points: " << C_points << std::endl;
+    std::cout << "Debug: D Points: " << D_points << std::endl;
 
     // Calculate percentage and round it
     total_percentage_earned = (total_points_earned / total_course_points) * 100;
@@ -118,38 +134,38 @@ int main() {
     std::cout << "Total Percentage: " << total_percentage_earned << '%' << '\n';
     std::cout << "Final Letter Grade: " << earned_grade << '\n';
 
-// Create a vector of indices for sorting
-std::vector<int> indices(assignment_scores.size());
-for (int i = 0; i < indices.size(); i++) {
+    // Create a vector of indices for sorting
+    std::vector<int> indices(assignment_scores.size());
+    for (int i = 0; i < indices.size(); i++) {
     indices[i] = i;
-}
+    }
 
-// Sort indices based on scores in descending order
-std::sort(indices.begin(), indices.end(), [&](int a, int b) {
+    // Sort indices based on scores in descending order
+    std::sort(indices.begin(), indices.end(), [&](int a, int b) {
     return assignment_scores[a] > assignment_scores[b];
-});
+    });
 
-// Create new sorted vectors
-std::vector<std::string> sorted_names;
-std::vector<float> sorted_scores;
-for (int i : indices) {
+    // Create new sorted vectors
+    std::vector<std::string> sorted_names;
+    std::vector<float> sorted_scores;
+    for (int i : indices) {
     sorted_names.push_back(assignment_names[i]);
     sorted_scores.push_back(assignment_scores[i]);
-}
+    }
 
-// Update original vectors with sorted versions
-assignment_names = sorted_names;
-assignment_scores = sorted_scores;
+    // Update original vectors with sorted versions
+    assignment_names = sorted_names;
+    assignment_scores = sorted_scores;
 
-// Display sorted assignments
-if (!assignment_names.empty()) {
+    // Display sorted assignments
+    if (!assignment_names.empty()) {
     std::cout << "\nAssignments Sorted by Score (Highest to Lowest)\n";
     std::cout << "===============================================\n";
     for (size_t i = 0; i < assignment_names.size(); i++) {
         std::cout << assignment_names[i] << ": " << assignment_scores[i] << " points\n";
     }
     std::cout << std::endl;
-}
+    }
 
     return 0;
-}
+    }
