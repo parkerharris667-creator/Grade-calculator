@@ -35,6 +35,3 @@ Using g++ (Linux / macOS / WSL / MinGW):
 
 ## Requirements
 - C++17 or newer compiler (g++, clang, or MSVC)
-
-## Course Concepts Demonstrated
-Chapters 1-12 of [Textbook Title].
