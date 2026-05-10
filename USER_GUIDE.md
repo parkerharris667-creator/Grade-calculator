@@ -3,54 +3,54 @@ Introduction — This program is made to calculate the grade you will get in the
 Getting Started — Make sure you look at the instructions in the README.md file. Or Run: ./GradeCalculator
 
 Step-by-Step Walkthrough — 
-Prompt: Please input the Total Points Possible:
+1.Prompt: Please input the Total Points Possible:
 What it asks for: The maximum number of points available in the course.
 Expected data type / format: A whole number (integer).
 Constraints: Must be a positive integer greater than 0
 
-Prompt: Please input the Minimum Points for a 'A':
+2.Prompt: Please input the Minimum Points for a 'A':
 What it asks for: The minimum score required to earn an A grade.
 Expected data type / format: A whole number (integer).
 Constraints:
 Must be between 0 and the Total Points Possible.
 Should be greater than the minimum points for lower grades (B, C, D).
 
-Prompt: Please input the Minimum Points for a 'B':
+3.Prompt: Please input the Minimum Points for a 'B':
 What it asks for: The minimum score required to earn a B grade.
 Expected data type / format: A whole number (integer).
 Constraints:
 Must be between 0 and the Total Points Possible.
 Should be less than the A threshold and greater than the C threshold.
 
-Prompt: Please input the Minimum Points for a 'C':
+4.Prompt: Please input the Minimum Points for a 'C':
 What it asks for: The minimum score required to earn a C grade.
 Expected data type / format: A whole number (integer).
 Constraints:
 Must be between 0 and the Total Points Possible.
 Should be less than the B threshold and greater than the D threshold.
 
-Prompt: Please input the Minimum Points for a 'D':
+5.Prompt: Please input the Minimum Points for a 'D':
 What it asks for: The minimum score required to earn a D grade.
 Expected data type / format: A whole number (integer).
 Constraints:
 Must be between 0 and the Total Points Possible.
 Should be less than the C threshold.
 
-Prompt: Please input the points earned for Assignment 1:
+6.Prompt: Please input the points earned for Assignment 1:
 What it asks for: The score earned on the assignment.
 Expected data type / format: A whole number or decimal number.
 Constraints:
 Normally should be between 0 and the Total Points Possible.
 A negative number is a special sentinel value used to stop assignment entry and calculate the grade.
 
-Prompt: Please input the name for Assignment 1:
+7.Prompt: Please input the name for Assignment 1:
 What it asks for: The assignment’s name or label.
 Expected data type / format: Text/string.
 Constraints:
 Cannot be empty.
 May include letters, numbers, spaces, or symbols depending on implementation.
 
-Prompt Pattern Repeats for Additional Assignments
+8.Prompt Pattern Repeats for Additional Assignments
 For every additional assignment, the program repeats two prompts in order:
 Please input the points earned for Assignment N:
 Please input the name for Assignment N:
@@ -58,12 +58,12 @@ Assignment score input:
 Whole number or decimal number.
 Negative number ends input collection.
 
-Termination Prompt Example: Please input the points earned for Assignment 11:
+9.Termination Prompt Example: Please input the points earned for Assignment 11:
 What it asks for: Either another assignment score or the stop signal.
 Expected data type / format: Whole number or decimal number.
 Any negative value (e.g., -1) immediately stops assignment entry.
 
-Automatic Output
+10.Automatic Output
 After termination, the program automatically displays:
 Total Points Earned
 Total Points Possible
