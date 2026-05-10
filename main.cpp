@@ -6,7 +6,7 @@
 #include <algorithm>
 #include "Greeting.h"
 
- Grade Calculator — Final Project
+ /* Grade Calculator — Final Project
  * Author: [Parker Harris]
  * Course: COSC 1436, [Spring 2026]
  *
@@ -24,6 +24,7 @@
  * Ch 10 - Header + implementation files: Greeting.h and Greeting.cpp
  * Ch 11 - std::vector with push_back, range-based for, and indexed iteration
  * Ch 12 - <algorithm> std::sort with a lambda; <string> getline for names
+ */
 int main() {
     // Variable declarations
     int total_course_points = 0;
@@ -117,11 +118,6 @@ int main() {
     } else {
     earned_grade = 'F';
     }
-    std::cout << "Debug: Total Points Earned: " << total_points_earned << std::endl;
-    std::cout << "Debug: A Points: " << A_points << std::endl;
-    std::cout << "Debug: B Points: " << B_points << std::endl;
-    std::cout << "Debug: C Points: " << C_points << std::endl;
-    std::cout << "Debug: D Points: " << D_points << std::endl;
 
     // Calculate percentage and round it
     total_percentage_earned = (total_points_earned / total_course_points) * 100;
