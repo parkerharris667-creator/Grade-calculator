@@ -3,4 +3,4 @@ Getting Started — Make sure you look at the instructions in the README.md file
 Step-by-Step Walkthrough — number every prompt the user will see, in order, with: what the prompt is asking for, the data type / format expected (e.g., "a whole number", "a decimal number such as 87.5"), and acceptable input ranges or constraints (e.g., "Total Points Possible must be a positive integer").
 Sentinel Value Explanation — If you input a negative number into an assingment score it ends input and triggers the calculation.
 Sample Session — 
-Troubleshooting — at least 2 common mistakes (e.g., entering letters where a number is expected, forgetting that the sentinel is negative).
+Troubleshooting — 
